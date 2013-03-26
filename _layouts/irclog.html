@@ -1,0 +1,40 @@
+---
+
+layout: base
+
+---
+
+
+<section id="help" class="page container_12">
+
+<div class="grid_12">
+  <article class=" introduction">
+    
+      <p>
+      <strong><a href="/logs">Back to IRC Log  &larr;</a></strong>
+      </p>
+
+  </article>
+
+
+   <article class="irclog">
+
+        <header>
+          <h3>Date: {{ page.date | date_to_long_string }} </h3>     
+          <p>
+          <small>Server: <a href="http://{{ page.server }}">{{page.server}} </a>, 
+            Channel: <em>#{{ page.channel }}</em></small>
+          </p>
+        </header>
+        <div class="body">
+          <div class="desc">
+            <p> {{ content }} 
+            </p>
+          </div>
+        </div>
+      </article>	
+
+    </div>
+    <div class="clear"></div>
+</section>
+

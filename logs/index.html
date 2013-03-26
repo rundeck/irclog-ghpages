@@ -1,0 +1,32 @@
+--- 
+
+layout: base
+title: IRC Log
+
+---
+
+<section id="help" class="page">
+  
+  <article class="container_12">
+	
+    <div class="grid_12">
+      <h2>IRC Logs</h2>
+      <ul class="irclog">
+        {% for post in site.categories.logs %}
+        <li >
+          <a href="{{ post.url }}">
+            <h2>{{post.date | date_to_string }} #{{ post.channel }}</h2>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+    
+    <div class="clear"></div>
+
+  </article>
+
+
+</section>
+
